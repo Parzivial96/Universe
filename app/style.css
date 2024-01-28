@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(45,46,59,255);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#searchbar {
+  width: 400px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgba(52,57,69,255);
+  padding-left: 50px;
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+.headercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(36, 36, 36);
+}
+
+.headercontainer img {
+  height: 40px;
+}
+
+.searchcontainer{
+  position: relative;
+}
+
+.searchicon {
+  position: absolute;
+  background-color: transparent;
+  left: 12px;
+  top: 7px;
+  max-height: 24px;
+}
+
+.navbarcontainer {
+  position: absolute;
+  display: block;
+  flex-direction: column;
+  width: 200px;
+  height: calc(100vh - 71px);
+  padding-left: 10px;
+  padding-top: 10px;
+  border-right: 1px solid rgb(36, 36, 36);
+}
+
+.genresbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  margin-right: 12px;
+  border-radius: 8px;
+}
+
+.genresbox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.genresbox:hover {
+  cursor: pointer;
+}
+
+.genresbox.selected, .genresbox.selected p{
+  background-color: rgba(63,69,84,255);
+}
+
+.gametilecontainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 250px;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: rgba(63,69,84,255);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.gametilecontainer * {
+  background-color: transparent;
+}
+
+.gametilecontainer h3 {
+  padding: 10px;
+}
+
+.buynowcontainer {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.buynowcontainer p {
+  padding: 8px;
+}
+
+.buynowcontainer input:hover {
+  cursor: pointer;
+}
+
+.buynowcontainer input {
+  background-color: green;
+  border: none;
+  padding: 10px;
+}
+
+.gametilecontainer img {
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.platformcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.platformcontainer img {
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.gamescontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 250px;
+  max-height: calc(100vh - 165px);
+  padding-top: 15px;
+  padding-bottom: 25px;  
+  overflow-y: scroll;
+  background-color: transparent;
+}
+
+.like {
+  position: absolute;
+  top: 160px;
+  left: 210px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+}
+
+.like img {
+  border-radius: 15px;
+  height: 30px;
+}
+
+.like:hover {
+  cursor: pointer;
+}
+
+.filterbarinner {
+  display: flex;
+  align-items: center;
+  width: 620px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.filterbar {
+  margin-top: 0px;
+  padding-left: 250px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  z-index: 2; /* Ensure that the filterbar is above other elements */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.orderby {
+  width: 160px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.platforms {
+  width: 160px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
